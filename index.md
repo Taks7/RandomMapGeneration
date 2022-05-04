@@ -98,11 +98,47 @@ We got a random division, but we don’t want the rooms to use the whole space, 
 
 `Creating the corridors to conect the different rooms`
 
+## Perlin Noise
 
+A common way to generate 2D maps is to use a noise function, such as perlin noise. The noise function look like this:
 
+![image](https://user-images.githubusercontent.com/72123380/166792382-f1e302cd-7771-4fca-ae8c-e8be917f5f9a.png)
+
+`Perlin noise multiple examples`
+
+To create a random terrain we need to store a seed, a math formula and set a frequency.We assign each location on the map a number from 0.0 to 1.0. In this image, 0.0 is black and 1.0 is white. Once you have this values, you interpretate numbers to spawn terrains.
+
+![image](https://user-images.githubusercontent.com/72123380/166802011-abed0768-0844-4112-9cdc-2ee43507b857.png)
+
+`Example of Perlin noise applied to create a map terrain`
+
+```C++
+ public double perlin(double x, double y, double z);
+```
+
+### Posible Improvements
+
+A way to improve the random map generation is to add premade structures, changing the perlin function in order to have for example little villages or chests. Special landmarks can act as a rewarding system to the player and they help in improving the world playability and overall engagement and satisfaction of the player. 
+
+Those structures must have a function to mesure the distance between one and the other or a function to mesure the probabilty of spawning,in other words, how random they are. Those functions are made to avoid overlapping those structures or to simply make them very rare to find, for example, we dont want a world plagued with rewarding chests every ten meters.
+
+Another way to improve the perlin noise function is to add multiple levels on it, in that way you can be able to create very distinct and rich biomes and improve the overall replayability of your game.
+
+### Exercise
+
+Link to the template with the exercise created to test the knowledge about Random Map Generation:
+
+https://github.com/Taks7/RandomMapGeneration/releases/tag/Exercises
+
+Inside we can found a serie of TODO's in order to complete the template.
+
+Here we have the solution of the exercises:
+
+https://github.com/Taks7/RandomMapGeneration/releases/tag/Solution
 
 ### Citations
 
 - https://github.com/Azgaar/Fantasy-Map-Generator
 - https://gamedevelopment.tutsplus.com/tutorials/create-a-procedurally-generated-dungeon-cave-system--gamedev-10099
 - https://www.youtube.com/watch?v=ZZY9YE7rZJw&ab_channel=javidx9
+- https://www.youtube.com/watch?v=jv6YT9pPIHw&ab_channel=BarneyCodes
