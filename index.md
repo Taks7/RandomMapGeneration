@@ -52,6 +52,8 @@ Nowadays a video game demands several materials to compose a complex and large s
 Maps generated randomly might not be the choice for everyone, it depends on the style and genre of your game to decide if its right or not for your project and there are some major downsides to consider too.
 
 ![gif2](https://user-images.githubusercontent.com/72123380/166711217-4ffd585e-4fca-4703-8bb2-383b54e9948c.gif)
+
+
 `Example of random generated dungeons`
 
 ## Good aspects about Random Generated Maps
@@ -69,13 +71,33 @@ Maps generated randomly might not be the choice for everyone, it depends on the 
 
 ## When you should use Random Generated Maps?
 
+- If your project is an open world game
+- If your project is a survival game
+- If your project is based on exploration
+- If your game focuses on trading
+
+### Examples of other games approaches
+
+Now we will see how some of the most succesful and popular games used procedural maping
+
+**Minecraft** : Like most 3D terrain in video games, it is entirely based on noise. When you begin the game, a random 64 bit number called a Seed is generated and this seed is used to generate the world. Different seeds will generate different worlds, and if you use the same seed you will always get the same result.
+
+![image](https://user-images.githubusercontent.com/72123380/166725498-69b3f811-dd4a-4378-a116-f3aea4af55d7.png)
+
+`Example of Minecraft as a game using procedural generation`
+
+**Rust**: Similar procedural maping as minecraft, when the world is initially generated for the first time, the world creator will choose a random number, which determines the layout of the new world, and that number is called seed. Everything is randomized in the initial world generation, including radtown placement, roads, rivers, monuments, and biome placement.
+
+![image](https://user-images.githubusercontent.com/72123380/166726596-1223b9d7-850e-4008-87eb-862c5c8f0dda.png)
+
+`Example of Rust as a game using procedural generation`
 
 
+**Spore**: A game quite popular in 2008, it was also famous for the usage of procedural maping in multiple levels, the initial planet was generated randomly but the space and galaxy surrounding your planet was also made with procedural generation.
 
+![image](https://user-images.githubusercontent.com/72123380/166726322-fb724c7b-5893-41eb-bd6b-a6e40a1f7d80.png)
 
-
-
-
+`Example of Spore as a game using procedural generation`
 
 
 
