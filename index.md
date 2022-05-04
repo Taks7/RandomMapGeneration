@@ -1,51 +1,22 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/Taks7/RandomMapGeneration/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Taks7/RandomMapGeneration/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-
 # Description
 
 In video games a random map is a map generated randomly by the computer, usually in strategy games. Random maps are often the core of single and multiplayer gameplay, aside from story based campaigns that are often shipped with the game.
 
-Each new game presents an unknown map, providing a new experience to the player and random maps typically follow an specific theme, for example, a naval theme with many small islands or a nuclear theme with an open desert with huge bomb holes.
+Each new game presents an unknown map, providing a new experience to the player and random maps typically follow an specific theme, for example, a naval theme with many small islands or a nuclear theme with an open desert with huge bomb holes. The type of random map can also influence the game's artificial intelligence, with the AI employing different strategies optimized for each random map.
+
+# Introduction
+
+This research project has been developed by Albert Ramisa for the subject Project II.
+
+In this research the main objectives are the following:
+
+- Do a research about Random Map Generation and the different implementations in videogames.
+- Be able to understand how procedural maping is done and how we can create different types of maps taking into account all the different variations and characteristics.
 
 ![gif22](https://user-images.githubusercontent.com/72123380/166712406-050b0db6-89f8-4bbb-86ac-699cc3f8cf16.gif)
 `Example of random generated islands`
 
-# Why do we want random generated maps?
+# Market Study
 
 Nowadays a video game demands several materials to compose a complex and large scene, this is a costly content in the development plan for every game development studio. So these algorithms are made to reduce the amount of work and in the end, time taken to create a game. From the player perspective they can make a huge impact on replayability, because the map you see your first game will not be the same the second time you play.
 
@@ -99,11 +70,33 @@ Now we will see how some of the most succesful and popular games used procedural
 
 `Example of Spore as a game using procedural generation`
 
+# Selected Approach
 
+The tricky part in procedural generation is not to make things random, but to make them in a consistent way despite it’s randomness. There are two different types of ways to achieve that depending on your map:
 
+![gifpr1](https://user-images.githubusercontent.com/72123380/166746366-772a16e3-19ac-4c26-a190-f9f8d02f78a0.gif)
 
+`Outdoor Maping Example`
 
+![gif22](https://user-images.githubusercontent.com/72123380/166747454-63c910df-03f4-4fd8-b2ca-2a959efa0385.gif)
 
+`Indoor Maping Example`
+
+To acomplish the procedure generation there will be a different method depending on wich of those two you select.
+
+## Dungeon Generation
+
+When making a dungeon you have to face the problem of filling the space with elements in a natural way. First step we have to do is to divide a plane into sets recursively. We divide until we can’t divide anymore or until we reach a maximum number of spaces.
+
+![11111](https://user-images.githubusercontent.com/72123380/166748959-9097de97-3303-4ae0-b8ce-7feff94d58ca.PNG)
+
+`Dividing a plane until we reach a maximum number of spaces`
+
+We got a random division, but we don’t want the rooms to use the whole space, so let’s add a method to cut their borders recursively. We can achieve that giving a regular or non regular margin between space wall and room wall. And the last step is to add corridors, we are going to do this by recursively connecting each node with it’s sibling.
+
+![image](https://user-images.githubusercontent.com/72123380/166749486-6aa9a0d2-5c67-448a-85d4-9341f196d87f.png)
+
+`Creating the corridors to conect the different rooms`
 
 
 
@@ -111,3 +104,5 @@ Now we will see how some of the most succesful and popular games used procedural
 ### Citations
 
 - https://github.com/Azgaar/Fantasy-Map-Generator
+- https://gamedevelopment.tutsplus.com/tutorials/create-a-procedurally-generated-dungeon-cave-system--gamedev-10099
+- https://www.youtube.com/watch?v=ZZY9YE7rZJw&ab_channel=javidx9
