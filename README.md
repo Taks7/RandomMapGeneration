@@ -27,7 +27,7 @@ https://taks7.github.io/RandomMapGeneration/
 
 ## License
 
-![Captura de pantalla (303)](https://user-images.githubusercontent.com/72123380/157974431-a9d08ea0-f502-40c2-a248-cc3f618f38fc.png)
+![11111](https://user-images.githubusercontent.com/72123380/166719477-c858de7a-537c-4f16-8d45-29fd7b99d047.PNG)
 
 All the information about the license in the following link: 
-[LICENSE.txt](https://github.com/mrmile/Project-2-rpg/files/8235897/LICENSE.txt)
+[LICENSE.txt](https://github.com/Taks7/RandomMapGeneration/files/8621963/LICENSE.txt)
