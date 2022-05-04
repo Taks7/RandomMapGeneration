@@ -76,7 +76,7 @@ Maps generated randomly might not be the choice for everyone, it depends on the 
 - If your project is based on exploration
 - If your game focuses on trading
 
-### Examples of other games approaches
+### Examples of Games using Procedural Maping
 
 Now we will see how some of the most succesful and popular games used procedural maping
 
